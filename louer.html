@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Louer - Marahoué Immo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f6; /* Fond gris clair pour faire ressortir les cartes blanches */
+            margin: 0;
+            padding: 0;
+        }
+        /* La barre de navigation en haut */
+        header {
+            background-color: #ffffff;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        /* La flèche de retour */
+        .back-btn {
+            text-decoration: none;
+            color: #2E7D32;
+            font-size: 28px;
+            font-weight: bold;
+            margin-right: 15px;
+        }
+        h1 {
+            color: #1b5e20;
+            font-size: 20px;
+            margin: 0;
+        }
+        /* La grille qui organise les gros boutons */
+        .category-container {
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Sépare l'écran en 2 colonnes */
+            gap: 15px;
+        }
+        /* Le design des cartes à cliquer */
+        .category-card {
+            background-color: white;
+            border-radius: 15px;
+            padding: 25px 10px;
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 2px solid transparent; /* Prépare la bordure pour le clic */
+        }
+        /* Effet visuel quand le doigt appuie sur la carte */
+        .category-card:active {
+            border-color: #2E7D32;
+            background-color: #f0fdf4;
+        }
+        .icon {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+        .title {
+            font-size: 15px;
+            font-weight: bold;
+        }
+        /* Option qui prend toute la largeur de l'écran */
+        .full-width {
+            grid-column: span 2;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="back-btn">←</a>
+        <h1>Que cherchez-vous ?</h1>
+    </header>
+
+    <main>
+        <div class="category-container">
+            <a href="#" class="category-card">
+                <span class="icon">🏠</span>
+                <span class="title">Maisons & Villas</span>
+            </a>
+            
+            <a href="#" class="category-card">
+                <span class="icon">🛏️</span>
+                <span class="title">Chambres & Studios</span>
+            </a>
+
+            <a href="#" class="category-card full-width">
+                <span class="icon">🏪</span>
+                <span class="title">Magasins & Boutiques</span>
+            </a>
+            
+            <a href="#" class="category-card full-width">
+                <span class="icon">📦</span>
+                <span class="title">Entrepôts & Stockage</span>
+            </a>
+        </div>
+    </main>
+
+</body>
+</html>
